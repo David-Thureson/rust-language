@@ -9,6 +9,7 @@ use std::sync::atomic;
 // use language_util::show_size_align;
 // use language::*;
 use crate::*;
+use util_rust::format;
 
 // Documentation: https://doc.rust-lang.org/std/mem/index.html
 
@@ -17,7 +18,7 @@ pub fn main() {
     // try_align_of();
     // try_discriminant();
     // try_drop();
-    try_size_of();
+    // try_size_of();
     // try_size_of_val_align_of_val();
     // test_show_size_align_macro();
     // try_size_of_generic_struct();
@@ -309,11 +310,11 @@ fn try_size_of_generic_struct() {
     }
 
     // Test the generic format_count() function in the util crate:
-    dbg!(format_count(a.low));
-    dbg!(format_count(b.low));
-    dbg!(format_count(a.min_split_size));
-    dbg!(format_count(b.min_split_size));
-    println!("{}", format_count(b.min_split_size));
+    dbg!(format::format_count(a.low));
+    dbg!(format::format_count(b.low));
+    dbg!(format::format_count(a.min_split_size));
+    dbg!(format::format_count(b.min_split_size));
+    println!("{}", format::format_count(b.min_split_size));
 
     dbg!(a.low as u64);
     dbg!(a.min_split_size as u64);

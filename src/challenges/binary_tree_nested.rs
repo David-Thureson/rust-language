@@ -6,7 +6,7 @@ use std::cmp::max;
 use std::fmt::Display;
 use std::mem;
 use std::{thread, time};
-use util::format::*;
+use util_rust::format::*;
 
 // This uses the binary tree structure used in several LeetCode problems, except that it's
 // generic instead of holding i32 values so that there is no Copy or Clone and thus a better
@@ -192,7 +192,7 @@ impl<T: Display> NestedBinaryTreeNode<T> {
     }
 
     fn print_internal(&self, depth: usize, label: &str) {
-        print_indent_space(depth, format!("{:<6} {}", label, &self.val).as_ref());
+        println_indent_space(depth, format!("{:<6} {}", label, &self.val).as_ref());
         self.left
             .as_ref()
             .map(|x| x.print_internal(depth + 1, "left:"));

@@ -24,12 +24,6 @@ use modules::*;
 // use crate::rc_module::*;
 // use crate::any_module::*;
 
-#[macro_use]
-extern crate typename;
-
-#[macro_use]
-extern crate util;
-
 fn main() {
     println!("\nLanguage\n");
     // challenges::binary_tree_vector::main();

@@ -195,7 +195,7 @@ fn try_get_mut() {
 fn try_partition_at_index() {
     let mut a = make_random_vec(20, 11, 20);
     dbg!(&a);
-    let (before_index, at_index, after_index) = a.partition_at_index(8);
+    let (before_index, at_index, after_index) = a.select_nth_unstable(8);
     dbg!(&before_index, &at_index, &after_index);
     dbg!(&a);
 }

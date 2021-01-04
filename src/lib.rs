@@ -1,3 +1,5 @@
+#![allow(incomplete_features)]
+
 #![feature(try_trait)]
 #![feature(box_syntax)]
 #![feature(option_result_contains)]
@@ -12,9 +14,10 @@
 // #![feature(bool_to_option)]
 #![feature(trace_macros)]
 #![feature(log_syntax)]
+#![feature(bool_to_option)]
 
-extern crate util;
-pub use util::*;
+extern crate util_rust;
+// pub use util_rust::*;
 
 pub mod language_util;
 //pub use language_util::*;

@@ -1,6 +1,6 @@
 #![allow(unused_variables)]
 
-use ::util::*;
+use crate::language_util;
 
 pub fn main() {
     try_then();
@@ -10,8 +10,8 @@ fn try_then() {
     dbg!(false.then_some(5));
     dbg!(true.then_some(5));
 
-    dbg!(false.then({ || produce_value(6) }));
-    dbg!(true.then({ || produce_value(7) }));
+    dbg!(false.then(|| language_util::produce_value(6)));
+    dbg!(true.then(|| language_util::produce_value(7)));
 }
 
 // Implement the methods shown on https://doc.rust-lang.org/beta/std/primitive.bool.html that seem

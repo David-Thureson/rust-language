@@ -1,11 +1,9 @@
 #![macro_use]
 
-/*
-
 use std::fmt::Display;
 
-// These are macros and helper functions specific to the language project. We already import util
-// which is shared among crates/projects.
+// These are macros and helper functions specific to the language project. We already import
+// rust-util which is shared among crates/projects.
 
 // Note that this uses $x:ty instead of $x:expr. Watch out for this if copying and pasting.
 macro_rules! show_size_align {
@@ -48,4 +46,3 @@ pub fn vec_copy_for_display<T: Display>(vec: &Vec<T>) -> Vec<String> {
     vec.iter().map(|x| format!("{}", x)).collect()
 }
 
-*/
