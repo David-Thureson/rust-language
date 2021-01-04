@@ -1,0 +1,6 @@
+[1, 2, 3]
+	.iter()
+	.map(|x| *x)
+	.cycle()
+	.take(8)
+	.collect::<Vec<i32>>()
