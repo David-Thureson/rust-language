@@ -16,8 +16,8 @@
 #![feature(log_syntax)]
 #![feature(bool_to_option)]
 
-extern crate util_rust;
-// pub use util_rust::*;
+extern crate util;
+// pub use util::*;
 
 pub mod language_util;
 //pub use language_util::*;
@@ -25,6 +25,7 @@ pub mod language_util;
 pub mod challenges;
 pub mod modules;
 pub mod other;
+pub mod other_crates;
 pub mod traits;
 pub mod types;
 

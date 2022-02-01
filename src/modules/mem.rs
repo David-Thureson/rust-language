@@ -9,7 +9,7 @@ use std::sync::atomic;
 // use language_util::show_size_align;
 // use language::*;
 use crate::*;
-use util_rust::format;
+use util::format;
 
 // Documentation: https://doc.rust-lang.org/std/mem/index.html
 

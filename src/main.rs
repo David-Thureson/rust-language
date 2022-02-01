@@ -20,6 +20,7 @@ use std::time::Instant;
 use typename::TypeName;
 
 use language::*;
+use other_crates;
 use modules::*;
 // use crate::rc_module::*;
 // use crate::any_module::*;
@@ -30,11 +31,12 @@ fn main() {
     // challenges::binary_tree_nested::main();
     // challenges::parallel_iterator::main();
     // challenges::use_trait_if_found::main();
+    other_crates::try_itertools::main();
     // modules::any::main();
     // modules::cell::main();
     // modules::convert::main();
     // modules::future::main();
-    modules::mem::main();
+    // modules::mem::main();
     // modules::rc::main();
     // other::lifetime_for_botw::main();
     // other::macros::main();

@@ -8,8 +8,9 @@ edition = "2018"
 
 [dependencies]
 typename = "0.1.1"
-util-rust = { path = "../util-rust" }
+util = { path = "../../utility/util" }
 parallel-iterator = "0.1.5"
 rand = "0.7"
 rayon = "0.7.1"
+itertools = "0.10.0"
 
